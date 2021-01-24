@@ -3,7 +3,7 @@ export default function() {
   const defaultProps = {
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     distance: '30px',
-    duration: 800,
+    duration: 500,
     desktop: true,
     mobile: true
   };
@@ -21,7 +21,7 @@ export default function() {
   ScrollReveal().reveal('.hero-title', 
     assignProps(
       { 
-        delay: 500, 
+        delay: 400, 
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
@@ -29,7 +29,7 @@ export default function() {
   ScrollReveal().reveal('.hero-cta', 
     assignProps(
       {
-        delay: 700, 
+        delay: 500, 
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
@@ -46,7 +46,7 @@ export default function() {
   ScrollReveal().reveal('.about-wrapper__info', 
     assignProps(
       {
-        delay: 700,
+        delay: 500,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
@@ -63,7 +63,7 @@ export default function() {
   ScrollReveal().reveal('.project-wrapper__image', 
     assignProps(
       {
-        delay: 600,
+        delay: 500,
         origin: window.innerWidth > 768 ? 'right' : 'bottom'
       }, defaultProps)
   );
@@ -72,7 +72,7 @@ export default function() {
   ScrollReveal().reveal('.contact-wrapper', 
     assignProps(
       {
-        delay: 700,
+        delay: 300,
         origin: 'bottom'
       }, defaultProps)
   );
